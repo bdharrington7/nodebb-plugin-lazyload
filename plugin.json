@@ -1,0 +1,15 @@
+{
+	"id": "nodebb-plugin-lazyload",
+	"name": "NodeBB image lazyloading plugin",
+	"description": "Lazyloads images in a post"
+	"url": "https://github.com/bdharrington7/nodebb-plugin-lazyload",
+	"library": "./library.js", 
+	"hooks": [
+		{
+			"hook": "filter:post.parse",
+			"method": "parse",
+			"callbacked": true,
+			"priority": 7
+		}
+	]
+}
